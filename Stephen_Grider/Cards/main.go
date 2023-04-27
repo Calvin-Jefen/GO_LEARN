@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func main() {
 	// cards := newDeck()
 	// // cards = append(cards, "Six of Spades")
@@ -12,8 +10,16 @@ func main() {
 	// // fmt.Println("-----------")
 	// remainingCards.print()
 
+	// cards := newDeck()
+	// // fmt.Println(cards.toString())
+	// cards.saveToFile("my_cards")
+
+	// cards := newDeckFromFile("my_cards")
+	// cards.print()
+
 	cards := newDeck()
-	fmt.Println(cards.toString())
+	cards.shuffle()
+	cards.print()
 }
 
 // func newcard() string {
